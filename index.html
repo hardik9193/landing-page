@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FCC Landing page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style type="text/css">
+    body {
+        color: #8492a6;
+        font-size: 16px;
+    }
+
+    #main {
+        padding-top: 80px;
+    }
+
+    .black-color {
+        color: #161C2D;
+    }
+
+    .sec-pad {
+        padding: 100px 0;
+    }
+
+    .block-title {
+        text-align: center;
+        margin: 0 0 30px;
+        font-weight: 700;
+    }
+
+    #header {
+        background: #fff;
+        padding: 15px 0;
+        position: fixed;
+        width: 100%;
+        border-bottom: 1px solid #fafafa;
+        z-index: 999;
+    }
+
+    .header-wrapper {
+        display: flex;
+    }
+
+    #header .logo #header-img {
+        width: 170px;
+    }
+
+    #nav-bar {
+        margin-left: auto;
+    }
+
+    #nav-bar>ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav-bar>ul>li {
+        display: inline-flex;
+    }
+
+    #nav-bar>ul>li>a {
+        color: #161C2D;
+        padding: 8px 30px;
+        display: flex;
+        text-orientation: none;
+        transition: 0.3s all ease-in-out;
+    }
+
+    #nav-bar>ul>li>a:hover {
+        color: #2443AC;
+        text-decoration: none;
+    }
+
+    .hero-wrapper {
+        max-width: 700px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 65px 0;
+    }
+
+    .btn-primary {
+        background-color: #2443AC;
+    }
+    }
+
+    .btn-primary:hover {
+        background-color: #1E3479;
+    }
+
+    .hero-wrapper h1 {
+        color: #161C2D;
+        font-weight: bold;
+
+    }
+
+    .dark-bg {
+        background-color: #F8F9FC;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 2px 8px 0 rgb(0 0 0 / 12%);
+        margin: 0 0 15px;
+    }
+
+    .card-icon {
+        display: inline-flex;
+        width: 60px;
+        height: 60px;
+        margin: auto;
+        background: rgb(36 67 172 / 0.20);
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: #2443AC;
+        border-radius: 3px;
+        margin: 0 auto 20px;
+    }
+
+    .card-title {
+        color: #2443AC;
+        font-size: 20px;
+        margin: 0 0 20px;
+    }
+
+    .video-wrapper {
+        text-align: center;
+    }
+
+    .about-us img {
+        width: 100%;
+    }
+
+    .about-us .block-title {
+        text-align: left;
+    }
+
+    #video iframe {
+        padding: 15px;
+        background: rgb(36 67 172 / 0.20);
+        border-radius: 10px;
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+    }
+
+    #footer {
+    	background-color: #202942;
+    	text-align: center;
+    	padding: 10px 0;
+    }
+
+    #footer p {
+    	margin: 0;
+    }
+
+    @media (max-width: 767px) {
+    	#main {padding-top: 110px;}
+    	.logo {text-align: center;}
+    	.header-wrapper {flex-direction: column;}
+    	#nav-bar {width: 100%; margin: 10px 0 0;}
+    	#nav-bar>ul {display: flex; align-items: center; justify-content: center;}
+    }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="#"><img id="header-img" src="logo-dark.png" alt="original "></a>
+                </div>
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a href="#about-us" class="nav-link">About Us</a></li>
+                        <li><a href="#features" class="nav-link">Features</a></li>
+                        <li><a href="#works" class="nav-link">How Its Work</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section class="hero-sec dark-bg">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <h1>Powerfull landing for your website</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <div class="form-group">
+                            <input type="email" class="form-control" required name="email" id="email" placeholder="Enter your email address">
+                        </div>
+                        <div class="btn-group">
+                            <input type="submit" name="submit" id="submit" value="Get Started" class="btn btn-lg btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="sec-pad about-us" id="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img src="about.jpg" align="About us image">
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="about-wrap">
+                            <h2 class="block-title black-color">Our Story</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="features" class="features-sec dark-bg sec-pad">
+            <div class="container">
+                <h2 class="block-title black-color">Explore awesome features</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-icon"><span class="glyphicon glyphicon-tint"></span></div>
+                            <h4 class="card-title">Design & Development</h4>
+                            <p class="text">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-icon"><span class="glyphicon glyphicon-list-alt"></span></div>
+                            <h4 class="card-title">Management & Marketing</h4>
+                            <p class="text">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-icon"><span class="glyphicon glyphicon-wrench"></span></div>
+                            <h4 class="card-title">Easy To Use</h4>
+                            <p class="text">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="works" class="sec-pad">
+            <div class="container">
+                <h2 class="block-title black-color">How It Works</h2>
+                <div class="video-wrapper" id="video">
+                    <iframe width="700" height="400" src="https://www.youtube.com/embed/SV-MLjUHNDI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+    	<div class="container">
+    		<p>Copyright 2020, Landrick</p>
+    	</div>
+    </footer>
+</body>
+
+</html>
